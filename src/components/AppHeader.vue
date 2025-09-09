@@ -1,51 +1,23 @@
 <template>
-  <div>
-    <h2>Header</h2>
+  <div class="navbar bg-base-100 shadow-sm">
+  <div class="flex-none">
   </div>
+  <div class="flex-1">
+    <a class="btn btn-ghost text-xl">Le projet VUE de Thomas</a>
+  </div>
+  <router-link to="/" class="btn btn-soft btn-accent">acceuil</router-link>
+  <router-link to="/about" class="btn btn-soft btn-accent">About</router-link>
+  <router-link to="/exo" class="btn btn-soft btn-accent">Exos</router-link>
+  <router-link to="/lessons" class="btn btn-soft btn-accent">Lessons</router-link>
+  <router-link to="/TP" class="btn btn-soft btn-accent">TP</router-link>
+  <div class="flex-none">
+  </div>
+</div>
 </template>
 
 <script setup lang='js'>
-import { computed, watch, onMounted, onUpdated, onBeforeUnmount } from 'vue'
+import { RouterLink } from 'vue-router';
 
-const props = defineProps({
-  // v-model
-  modelValue: {
-    default: '',
-  },
-});
-
-const emit = defineEmits({
-  // v-model event with validation
-  'update:modelValue': (value) => value !== null,
-});
-
-const value = computed({
-  get () {
-    return props.modelValue;
-  },
-  set (value) {
-    emit('update:modelValue', value);
-  },
-});
-
-const stopWatch = watch(
-  () => props.modelValue, async (_newValue, _oldValue) => {
-    // do something
-  },
-  {
-    immediate: true
-  }
-);
-
-onMounted(() => {
-});
-
-onUpdated(() => {
-});
-
-onBeforeUnmount(() => {
-  stopWatch();
-});
 
 </script>
 
