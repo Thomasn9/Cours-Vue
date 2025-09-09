@@ -1,6 +1,5 @@
 <template>
-  <main>
-    <div class="card bg-base-100 w-96 shadow-sm">
+    <div class="card bg-base-100 w-90 shadow-sm">
       <figure>
         <img
           src="../../public/grafikart.png"
@@ -15,7 +14,7 @@
       </div>
     </div>
     
-    <div class="card bg-base-100 w-96 shadow-sm">
+    <div class="card bg-base-100 w-90 shadow-sm">
       <figure>
         <img
           src="../../public/daisyUI.png"
@@ -30,65 +29,23 @@
       </div>
     </div>
 
-    <div class="card bg-base-100 w-96 shadow-sm">
+    <div class="card bg-base-100 w-90 shadow-sm">
       <figure>
         <img
-          src="./public/daisyUI.png"
+          src="../../public/vue.png"
           alt="Site vue" />
       </figure>
       <div class="card-body">
-        <h2 class="card-title">Card Title</h2>
+        <h2 class="card-title">Site doc vue</h2>
         <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
         <div class="card-actions justify-end">
           <a href="https://vuejs.org/" target="_blank" class="btn btn-primary">accès au site</a>
         </div>
       </div>
     </div>
-  </main>
 </template>
 
 <script setup lang='js'>
-import { computed, watch, onMounted, onUpdated, onBeforeUnmount } from 'vue'
-
-const props = defineProps({
-  // v-model
-  modelValue: {
-    default: '',
-  },
-});
-
-const emit = defineEmits({
-  // v-model event with validation
-  'update:modelValue': (value) => value !== null,
-});
-
-const value = computed({
-  get () {
-    return props.modelValue;
-  },
-  set (value) {
-    emit('update:modelValue', value);
-  },
-});
-
-const stopWatch = watch(
-  () => props.modelValue, async (_newValue, _oldValue) => {
-    // do something
-  },
-  {
-    immediate: true
-  }
-);
-
-onMounted(() => {
-});
-
-onUpdated(() => {
-});
-
-onBeforeUnmount(() => {
-  stopWatch();
-});
 
 </script>
 

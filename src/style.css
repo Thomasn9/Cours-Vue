@@ -3,9 +3,16 @@
 
 
 /* ================================================\\NAVBAR//================================================ */
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .dropdown{
     margin: 1vw;
 }
+
+/* ==================================================\\MAIN//================================================ */
 
 main{
     display: flex;
@@ -14,7 +21,7 @@ main{
 
 .card{
     border: solid 2px white;
-    margin: 3vw;
+    margin: 1vw;
 }
 
 @media (max-width: 1000px) {
@@ -22,4 +29,9 @@ main {
     display: flex;
     flex-direction: column;
     }
+}
+/* ================================================\\FOOTER//================================================ */
+#copyright{
+    margin: 2vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

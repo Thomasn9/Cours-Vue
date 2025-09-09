@@ -1,28 +1,28 @@
 <template>
-  <div class="card p-4 bg-danger-subtle">
-    <h5>Tp-Databinding : Mode Composition</h5>
-    <div class="image d-flex flex-column justify-content-center align-items-center">
+  <div class="card bg-base-200 p-4">
+    <h5 class="text-lg font-semibold">Tp-Databinding : Mode Composition</h5>
+    <div class="flex flex-col items-center justify-center">
       <!-- v-bind de l'attribut src de l'image -->
-      <img v-bind:src="imageUser" :alt="nameUser" height="100" width="100">
+      <img v-bind:src="imageUser" :alt="nameUser" class="h-24 w-24 rounded-full">
       <!-- interpolation du nom -->
-      <span class="name mt-3">{{ nameUser }}</span>
+      <span class="mt-3 text-xl font-medium">{{ nameUser }}</span>
       <!-- v-bind de l'attribut value d'un input -->
-      <input type="text" :value="nameUser" class="texte-center from-control">
+      <input type="text" :value="nameUser" class="input input-bordered text-center mt-2">
       <!-- <input type="text" v-model ="nameUser"> -->
-      <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+      <div class="flex flex-row items-center justify-center gap-2 mt-2">
         <!-- interpolation de l'age -->
         <span>{{ ageUser }} ans</span>
       </div>
-      <div class="d-flex flex-row justify-content-center align-items-center mt-3">
-        <!-- interpolation fonction qui agmente l'age -->
+      <div class="flex flex-row items-center justify-center mt-3">
+        <!-- interpolation fonction qui augmente l'age -->
         <span>age + 10 :
-          <span class="follow">{{ augmenterAge() }} ans</span>
+          <span class="font-bold">{{ augmenterAge() }} ans</span>
         </span>
       </div>
-      <div class="px-2 rounded mt-4 date">
+      <div class="px-4 py-2 rounded-lg mt-4 bg-base-300">
         NB Fétiche :
         <!-- interpolation de la fonction qui génère un nb random  -->
-        <span>{{ nombreRandom() }}</span>
+        <span class="font-mono">{{ nombreRandom() }}</span>
       </div>
     </div>
   </div>
