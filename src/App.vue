@@ -6,17 +6,21 @@
       alt="Shoes" />
   </figure>
   <div class="card-body">
-    <h2 class="card-title">Card Title</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+    <h2 class="card-title">{{tableau}}</h2>
+    <h3>{{ nombre }}</h3>
+    <p>{{string}}</p>
     <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
+      <button class="btn btn-primary">{{boolean}}</button>
     </div>
   </div>
 </div>
 </template>
 
 <script setup lang="js">
-
+const nombre = 42;
+const string = "coucou je suis un texte";
+const tableau = [1,2,3,6];
+const boolean = true;
 </script>
 
 
