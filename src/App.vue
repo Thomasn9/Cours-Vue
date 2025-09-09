@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="bg-base-100 p-6 rounded-xl shadow-md border border-base-300">
     <h5 class="text-lg font-semibold text-center mb-6 text-primary">Text Interpolation Mode : Composition</h5>
     
@@ -79,4 +79,21 @@ const fonctionTest = () => {
 </script>
 
 <style scoped lang="css">
+</style> -->
+<!-- ============================================\\exo 2//=============================== -->
+
+<template>
+<p>{{ aleatoire() }}</p>
+</template>
+
+<script lang="js" setup>
+
+const aleatoire = () => {
+  return Math.random() < 0.5 ? 'Livre Boba Fett' : 'Livre de la Jungle';
+
+}
+</script>
+
+<style>
+
 </style>
