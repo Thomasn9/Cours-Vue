@@ -19,10 +19,22 @@ const router = createRouter({
             component: () => import('../pages/exo/exo1.vue')
         },
         {
-            path: '/exo',
-            alias: '/exo',
-            name: 'exo',
+            path: '/exo2',
+            alias: '/exo2',
+            name: 'exo2',
             component: () => import('../pages/exo/exo2.vue')
+        },
+// ====================================================\\LESSONS//=====================================================
+        {
+            path: '/lessons',
+            name: 'lessons',
+            component: () => import('../pages/lessons/lesson1.vue')
+        },
+// ====================================================\\LESSONS//=====================================================
+        {
+            path: '/tp',
+            name: 'tp',
+            component: () => import('../pages/TP/tp1.vue')
         },
 // ====================================================\\ABOUT//=====================================================
         {

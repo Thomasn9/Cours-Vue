@@ -1,53 +1,48 @@
 <template>
-  <div>
-    <input v-model="value" />
+  <div class="card p-4 bg-danger-subtle">
+    <h5>Tp-Databinding : Mode Composition</h5>
+    <div class="image d-flex flex-column justify-content-center align-items-center">
+      <!-- v-bind de l'attribut src de l'image -->
+      <img v-bind:src="imageUser" :alt="nameUser" height="100" width="100">
+      <!-- interpolation du nom -->
+      <span class="name mt-3">{{ nameUser }}</span>
+      <!-- v-bind de l'attribut value d'un input -->
+      <input type="text" :value="nameUser" class="texte-center from-control">
+      <!-- <input type="text" v-model ="nameUser"> -->
+      <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+        <!-- interpolation de l'age -->
+        <span>{{ ageUser }} ans</span>
+      </div>
+      <div class="d-flex flex-row justify-content-center align-items-center mt-3">
+        <!-- interpolation fonction qui agmente l'age -->
+        <span>age + 10 :
+          <span class="follow">{{ augmenterAge() }} ans</span>
+        </span>
+      </div>
+      <div class="px-2 rounded mt-4 date">
+        NB Fétiche :
+        <!-- interpolation de la fonction qui génère un nb random  -->
+        <span>{{ nombreRandom() }}</span>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup lang='js'>
-import { computed, watch, onMounted, onUpdated, onBeforeUnmount } from 'vue'
+import { ref } from 'vue'
 
-const props = defineProps({
-  // v-model
-  modelValue: {
-    default: '',
-  },
-});
+const nameUser = ref('Dr Mario');
+const ageUser = ref(30);
+const imageUser = 'https://s3.amazonaws.com/medium.cosplay.com/77883/2111288.jpg'
 
-const emit = defineEmits({
-  // v-model event with validation
-  'update:modelValue': (value) => value !== null,
-});
+const augmenterAge = () => {
+  // Avec les ref on peut acceder a leur value 
+  // Voyez ref comme une sorte de conteneur reactif de vue pour les variables 
+  return ageUser.value + 10;
+}
 
-const value = computed({
-  get () {
-    return props.modelValue;
-  },
-  set (value) {
-    emit('update:modelValue', value);
-  },
-});
-
-const stopWatch = watch(
-  () => props.modelValue, async (_newValue, _oldValue) => {
-    // do something
-  },
-  {
-    immediate: true
-  }
-);
-
-onMounted(() => {
-});
-
-onUpdated(() => {
-});
-
-onBeforeUnmount(() => {
-  stopWatch();
-});
-
+const nombreRandom = () => {
+  return Math.random();
+  // return Math.floor(Math.random() * 100);
+}
 </script>
-
-<style scoped lang="css">
-</style>

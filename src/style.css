@@ -1,2 +1,25 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+/* ================================================\\NAVBAR//================================================ */
+.dropdown{
+    margin: 1vw;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: solid 2px white;
+    margin: 3vw;
+}
+
+@media (max-width: 1000px) {
+main {
+    display: flex;
+    flex-direction: column;
+    }
+}
