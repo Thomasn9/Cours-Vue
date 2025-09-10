@@ -8,11 +8,11 @@
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-soft btn-accent">Les Exos</div>
       <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow">
-        <li><a><router-link to="/exo" >Exos 1: déclaration des types</router-link></a></li>
+        <li><a><router-link to="/exo" >Exos 1 : déclaration des types</router-link></a></li>
         <hr>
-        <li><a><router-link to="/exo2" >Exos 2: random nom de livre</router-link></a></li>
+        <li><a><router-link to="/exo2" >Exos 2 : random nom de livre</router-link></a></li>
         <hr>
-        <li><a><router-link to="/exo3" >Exos 3: Bouton + et -</router-link></a></li>
+        <li><a><router-link to="/exo3" >Exos 3 : Bouton + et -</router-link></a></li>
       </ul>
     </div>
 
