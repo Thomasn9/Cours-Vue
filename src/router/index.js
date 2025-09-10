@@ -26,9 +26,19 @@ const router = createRouter({
         },
 // ====================================================\\LESSONS//=====================================================
         {
-            path: '/lessons',
-            name: 'lessons',
-            component: () => import('../pages/lessons/lesson1.vue')
+            path: '/lesson1',
+            name: '/lesson1',
+            component: () => import('../pages/lessons/text-interpolation.vue')
+        },
+        {
+            path: '/lesson2',
+            name: '/lesson2',
+            component: () => import('../pages/lessons/attribute-binding.vue')
+        },
+        {
+            path: '/lesson3',
+            name: '/lesson3',
+            component: () => import('../pages/lessons/event-binding.vue')
         },
 // ====================================================\\TP/=====================================================
         {

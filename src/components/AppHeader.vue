@@ -17,7 +17,11 @@
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-soft btn-accent">Lessons</div>
       <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-        <li><a><router-link to="/lessons">lecons 1</router-link></a></li>
+        <li><a><router-link to="/lesson1">texte interpolation</router-link></a></li>
+        <hr>
+        <li><a><router-link to="/lesson2">atribut-binding</router-link></a></li>
+        <hr>
+        <li><a><router-link to="/lesson3">event-binding</router-link></a></li>
         
       </ul>
     </div>
