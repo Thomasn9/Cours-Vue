@@ -24,6 +24,12 @@ const router = createRouter({
             name: 'exo2',
             component: () => import('../pages/exo/exo2.vue')
         },
+        {
+            path: '/exo3',
+            alias: '/exo3',
+            name: 'exo3',
+            component: () => import('../pages/exo/exo3.vue')
+        },
 // ====================================================\\LESSONS//=====================================================
         {
             path: '/lesson1',

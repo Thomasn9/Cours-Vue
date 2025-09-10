@@ -11,6 +11,8 @@
         <li><a><router-link to="/exo" >Exos 1: déclaration des types</router-link></a></li>
         <hr>
         <li><a><router-link to="/exo2" >Exos 2: random nom de livre</router-link></a></li>
+        <hr>
+        <li><a><router-link to="/exo3" >Exos 3: Bouton + et -</router-link></a></li>
       </ul>
     </div>
 
