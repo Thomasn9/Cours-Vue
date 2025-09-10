@@ -1,6 +1,8 @@
 <template>
   <div class="navbar bg-base-100 shadow-sm">
-    <div>
+    
+    <div id="blocLogo">
+      <img src="../../public/logo.png" alt="" srcset="">
       <a><router-link to="/home" >Projet VUE Thomas</router-link></a>
     </div>
     
