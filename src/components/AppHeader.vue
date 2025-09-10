@@ -2,7 +2,7 @@
   <div class="navbar bg-base-100 shadow-sm">
     
     <div id="blocLogo">
-      <img src="../../public/logo.png" alt="" srcset="">
+      <img id= "logoHeader" src="../../public/logo.png" alt="" srcset="">
       <a><router-link to="/home" >Projet VUE Thomas</router-link></a>
     </div>
     
@@ -17,6 +17,8 @@
         <li><a><router-link to="/exo3" >Exos 3 : Bouton + et -</router-link></a></li>
         <hr>
         <li><a><router-link to="/exo4" >Exos 4 : Bouton + et - avec fonction</router-link></a></li>
+        <hr>
+        <li><a><router-link to="/exo5" >Exos 5 : Watcher</router-link></a></li>
       </ul>
     </div>
 
@@ -30,6 +32,10 @@
         <li><a><router-link to="/lesson3">event-binding</router-link></a></li>
         <hr>
         <li><a><router-link to="/lesson4">Le V-Model</router-link></a></li>
+        <hr>
+        <li><a><router-link to="/lesson5">Les Computed Properties</router-link></a></li>
+        <hr>
+        <li><a><router-link to="/lesson6">Les Watchers</router-link></a></li>
         
       </ul>
     </div>

@@ -36,6 +36,11 @@ const router = createRouter({
             name: 'exo4',
             component: () => import('../pages/exo/exo4.vue')
         },
+        {
+            path: '/exo5',
+            name: 'exo5',
+            component: () => import('../pages/exo/exo5.vue')
+        },
 // ====================================================\\LESSONS//=====================================================
         {
             path: '/lesson1',
@@ -56,6 +61,16 @@ const router = createRouter({
             path: '/lesson4',
             name: '/lesson4',
             component: () => import('../pages/lessons/two-way-binding.vue')
+        },
+        {
+            path: '/lesson5',
+            name: '/lesson5',
+            component: () => import('../pages/lessons/computed-properties.vue')
+        },
+        {
+            path: '/lesson6',
+            name: '/lesson6',
+            component: () => import('../pages/lessons/watchers.vue')
         },
 // ====================================================\\TP/=====================================================
         {
