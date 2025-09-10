@@ -52,6 +52,11 @@ const router = createRouter({
             name: 'tp',
             component: () => import('../pages/TP/tp1.vue')
         },
+        {
+            path: '/tp2',
+            name: 'tp2',
+            component: () => import('../pages/TP/tp2.vue')
+        },
 // ====================================================\\ABOUT//=====================================================
         {
             path: '/about',

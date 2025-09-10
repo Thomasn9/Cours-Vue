@@ -32,6 +32,8 @@
       <div tabindex="0" role="button" class="btn btn-soft btn-accent">TP</div>
       <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
         <li><a><router-link to="/tp">TP 1: docteur mario !!!</router-link></a></li>
+        <hr>
+        <li><a><router-link to="/tp2">TP 2: V-on 2 !!!</router-link></a></li>
       </ul>
     </div>
 
