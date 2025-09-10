@@ -13,6 +13,8 @@
         <li><a><router-link to="/exo2" >Exos 2 : random nom de livre</router-link></a></li>
         <hr>
         <li><a><router-link to="/exo3" >Exos 3 : Bouton + et -</router-link></a></li>
+        <hr>
+        <li><a><router-link to="/exo4" >Exos 4 : Bouton + et - avec fonction</router-link></a></li>
       </ul>
     </div>
 
