@@ -46,6 +46,11 @@ const router = createRouter({
             name: '/lesson3',
             component: () => import('../pages/lessons/event-binding.vue')
         },
+        {
+            path: '/lesson4',
+            name: '/lesson4',
+            component: () => import('../pages/lessons/two-way-binding.vue')
+        },
 // ====================================================\\TP/=====================================================
         {
             path: '/tp',

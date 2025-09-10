@@ -24,6 +24,8 @@
         <li><a><router-link to="/lesson2">atribut-binding</router-link></a></li>
         <hr>
         <li><a><router-link to="/lesson3">event-binding</router-link></a></li>
+        <hr>
+        <li><a><router-link to="/lesson4">Le V-Model</router-link></a></li>
         
       </ul>
     </div>
