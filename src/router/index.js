@@ -72,6 +72,11 @@ const router = createRouter({
             name: '/lesson6',
             component: () => import('../pages/lessons/watchers.vue')
         },
+        {
+            path: '/lesson7',
+            name: '/lesson7',
+            component: () => import('../pages/lessons/dynamic-styling.vue')
+        },
 // ====================================================\\TP/=====================================================
         {
             path: '/tp',

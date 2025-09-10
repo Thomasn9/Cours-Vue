@@ -36,6 +36,8 @@
         <li><a><router-link to="/lesson5">Les Computed Properties</router-link></a></li>
         <hr>
         <li><a><router-link to="/lesson6">Les Watchers</router-link></a></li>
+        <hr>
+        <li><a><router-link to="/lesson7">Dynamic-styling</router-link></a></li>
         
       </ul>
     </div>
