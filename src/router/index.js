@@ -108,6 +108,11 @@ const router = createRouter({
             name: 'tp2',
             component: () => import('../pages/TP/tp2.vue')
         },
+        {
+            path: '/tp3',
+            name: 'tp3',
+            component: () => import('../pages/TP/tp3.vue')
+        },
 // ====================================================\\GAUFRE CLICKER/=====================================================
         {
             path: '/simple-click',

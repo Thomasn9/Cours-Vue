@@ -58,6 +58,9 @@
         <li><a><router-link to="/tp">TP 1 : docteur mario !!!</router-link></a></li>
         <hr>
         <li><a><router-link to="/tp2">TP 2 : V-on 2 !!!</router-link></a></li>
+        <hr>
+        <li><a><router-link to="/tp3">TP 3 : Style Dynamic</router-link></a></li>
+
       </ul>
     </div>
 <!-- =====================================================\\TP//====================================================================== -->
