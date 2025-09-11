@@ -39,7 +39,7 @@ const activeRouge = () =>{
     display: flex;
     justify-content: space-around;
 }
-.classeBleu{
+.active{
     background-color: blue;
     color: white;
 }

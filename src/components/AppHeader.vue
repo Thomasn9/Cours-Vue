@@ -25,6 +25,8 @@
         <li><a><router-link to="/exo6v2" >Exos 6 v2 : Class dynamic</router-link></a></li>
         <hr>
         <li><a><router-link to="/exo6v3" >Exos 6 v3 : Style dynamic </router-link></a></li>
+        <hr>
+        <li><a><router-link to="/exo7" >Exos 7 : V-if </router-link></a></li>
 
       </ul>
     </div>
@@ -48,6 +50,8 @@
         <li><a><router-link to="/lesson7">Dynamic-styling</router-link></a></li>
         <hr>
         <li><a><router-link to="/lesson8">Dynamic-styling Type Script</router-link></a></li>
+        <hr>
+        <li><a><router-link to="/lesson9">Conditional-rendering</router-link></a></li>
         
       </ul>
     </div>
