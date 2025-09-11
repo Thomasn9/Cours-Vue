@@ -46,6 +46,16 @@ const router = createRouter({
             name: 'exo6',
             component: () => import('../pages/exo/exo6.vue')
         },
+        {
+            path: '/exo6v2',
+            name: 'exo6v2',
+            component: () => import('../pages/exo/exo6v2.vue')
+        },
+        {
+            path: '/exo6v3',
+            name: 'exo6v3',
+            component: () => import('../pages/exo/exo6v3.vue')
+        },
 // ====================================================\\LESSONS//=====================================================
         {
             path: '/lesson1',
@@ -97,6 +107,12 @@ const router = createRouter({
             path: '/tp2',
             name: 'tp2',
             component: () => import('../pages/TP/tp2.vue')
+        },
+// ====================================================\\GAUFRE CLICKER/=====================================================
+        {
+            path: '/simple-click',
+            name: '/simple-click',
+            component: () => import('../pages/gaufre clicker/simple-compteur.vue')
         },
 // ====================================================\\ABOUT//=====================================================
         {

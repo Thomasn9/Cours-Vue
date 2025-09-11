@@ -3,7 +3,7 @@
         <div id="card1">
             <button 
                 class="static"
-                @click="Active" 
+                @click="activeBleu" 
                 :class="{ active: isActive }">
                 Bouton 1
             </button>
@@ -11,7 +11,7 @@
         <div id="card2">
             <button 
                 class="static"
-                @click="desactiv" 
+                @click="activeRouge " 
                 :class="{ error : hasError }">
                 Bouton 2
             </button>
@@ -25,16 +25,20 @@ import {ref} from 'vue';
 const isActive = ref(true)
 const hasError = ref(false)
 
-const Active = () => {
+const activeBleu = () => {
     isActive.value = !isActive.value
 }
 
-const desactiv = () =>{
+const activeRouge = () =>{
     hasError.value = !hasError.value
 }
 </script>
 
 <style>
+#composant{
+    display: flex;
+    justify-content: space-around;
+}
 .active {
     background-color: blue;
     color: white;

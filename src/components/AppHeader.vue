@@ -9,7 +9,7 @@
 <!-- =====================================================\\EXO//====================================================================== -->
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-soft btn-accent">Les Exos</div>
-      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow">
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-40 p-2 shadow">
         <li><a><router-link to="/exo" >Exos 1 : déclaration des types</router-link></a></li>
         <hr>
         <li><a><router-link to="/exo2" >Exos 2 : random nom de livre</router-link></a></li>
@@ -20,14 +20,19 @@
         <hr>
         <li><a><router-link to="/exo5" >Exos 5 : Watcher</router-link></a></li>
         <hr>
-        <li><a><router-link to="/exo6" >Exos 6 : Style dynamic</router-link></a></li>
+        <li><a><router-link to="/exo6" >Exos 6 : Class dynamic</router-link></a></li>
+        <hr>
+        <li><a><router-link to="/exo6v2" >Exos 6 v2 : Class dynamic</router-link></a></li>
+        <hr>
+        <li><a><router-link to="/exo6v3" >Exos 6 v3 : Style dynamic </router-link></a></li>
+
       </ul>
     </div>
 
     <!-- =====================================================\\LESSONS//====================================================================== -->
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-soft btn-accent">Lessons</div>
-      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-40 p-2 shadow-sm">
         <li><a><router-link to="/lesson1">texte interpolation</router-link></a></li>
         <hr>
         <li><a><router-link to="/lesson2">atribut-binding</router-link></a></li>
@@ -49,14 +54,23 @@
 <!-- =====================================================\\TP//====================================================================== -->
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-soft btn-accent">TP</div>
-      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-40 p-2 shadow-sm">
         <li><a><router-link to="/tp">TP 1 : docteur mario !!!</router-link></a></li>
         <hr>
         <li><a><router-link to="/tp2">TP 2 : V-on 2 !!!</router-link></a></li>
       </ul>
     </div>
-
+<!-- =====================================================\\TP//====================================================================== -->
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-soft btn-accent">Gaufre-Clicker</div>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-40 p-2 shadow-sm">
+        <li><a><router-link to="/simple-click">Compteur simple</router-link></a></li>
+      </ul>
+    </div>
+<!-- =====================================================\\ABOUT//====================================================================== -->
+    <a><router-link to="/about" class="btn btn-soft btn-accent" >About</router-link></a>
   </div>
+
   <hr>
 </template>
 
