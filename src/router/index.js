@@ -41,6 +41,11 @@ const router = createRouter({
             name: 'exo5',
             component: () => import('../pages/exo/exo5.vue')
         },
+        {
+            path: '/exo6',
+            name: 'exo6',
+            component: () => import('../pages/exo/exo6.vue')
+        },
 // ====================================================\\LESSONS//=====================================================
         {
             path: '/lesson1',
@@ -76,6 +81,11 @@ const router = createRouter({
             path: '/lesson7',
             name: '/lesson7',
             component: () => import('../pages/lessons/dynamic-styling.vue')
+        },
+        {
+            path: '/lesson8',
+            name: '/lesson8',
+            component: () => import('../pages/lessons/dynamic-styling-ts.vue')
         },
 // ====================================================\\TP/=====================================================
         {

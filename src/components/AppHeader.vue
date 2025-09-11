@@ -6,7 +6,7 @@
       <a><router-link to="/home" >Projet VUE Thomas</router-link></a>
     </div>
     
-
+<!-- =====================================================\\EXO//====================================================================== -->
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-soft btn-accent">Les Exos</div>
       <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow">
@@ -19,9 +19,12 @@
         <li><a><router-link to="/exo4" >Exos 4 : Bouton + et - avec fonction</router-link></a></li>
         <hr>
         <li><a><router-link to="/exo5" >Exos 5 : Watcher</router-link></a></li>
+        <hr>
+        <li><a><router-link to="/exo6" >Exos 6 : Style dynamic</router-link></a></li>
       </ul>
     </div>
 
+    <!-- =====================================================\\LESSONS//====================================================================== -->
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-soft btn-accent">Lessons</div>
       <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
@@ -38,10 +41,12 @@
         <li><a><router-link to="/lesson6">Les Watchers</router-link></a></li>
         <hr>
         <li><a><router-link to="/lesson7">Dynamic-styling</router-link></a></li>
+        <hr>
+        <li><a><router-link to="/lesson8">Dynamic-styling Type Script</router-link></a></li>
         
       </ul>
     </div>
-
+<!-- =====================================================\\TP//====================================================================== -->
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-soft btn-accent">TP</div>
       <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
