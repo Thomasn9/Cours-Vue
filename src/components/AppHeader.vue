@@ -14,7 +14,7 @@
         <hr>
         <li><a><router-link to="/exo2" >Exos 2 : random nom de livre</router-link></a></li>
         <hr>
-        <li><a><router-link to="/exo3" >Exos 3 : Bouton + et -</router-link></a></li>
+        <li><a><router-link to="/exo3" >Exos 3 : Bouton + et -</router-link></a></li>²
         <hr>
         <li><a><router-link to="/exo4" >Exos 4 : Bouton + et - avec fonction</router-link></a></li>
         <hr>
@@ -27,6 +27,8 @@
         <li><a><router-link to="/exo6v3" >Exos 6 v3 : Style dynamic </router-link></a></li>
         <hr>
         <li><a><router-link to="/exo7" >Exos 7 : V-if </router-link></a></li>
+        <hr>
+        <li><a><router-link to="/exo8" >Exos 8 : V-for </router-link></a></li>
 
       </ul>
     </div>

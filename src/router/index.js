@@ -61,6 +61,11 @@ const router = createRouter({
             name: 'exo7',
             component: () => import('../pages/exo/exo7.vue')
         },
+        {
+            path: '/exo8',
+            name: 'exo8',
+            component: () => import('../pages/exo/exo8.vue')
+        },
 // ====================================================\\LESSONS//=====================================================
         {
             path: '/lesson1',
